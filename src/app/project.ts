@@ -1,7 +1,8 @@
 export interface Project {
-    name: String;
-    image: String;
-    desc: String;
-    tools: String[];  
-    category: String;
+    name: string;
+    image: string[];
+    desc: string;
+    tools: string[];  
+    category: string;
+    livedemolink?: string;
   }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 interface contactDetails {
   name: string;
@@ -11,11 +12,18 @@ interface contactDetails {
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css'] // Fixed 'styleUrls' instead of 'styleUrl'
 })
 export class ContactUsComponent {
+  linkedinUrl: string = "https://www.linkedin.com/in/john-gabriel-perez/";
+  emailUrl: string = "mailto:johngabrieltperez@gmail.com";
+  instaUrl: string = "https://www.instagram.com/perezjgs_/"
+
+  openLink(url: string): void {
+    window.open(url, "_blank");
+  }
 
   form: contactDetails = {
     name: '',

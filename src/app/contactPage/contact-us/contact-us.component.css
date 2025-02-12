@@ -51,8 +51,14 @@ header h1 {
    align-items: center;
    padding: 3%;
    gap: 3rem;
+   transform: translateY(0); 
+   transition: transform 0.3s ease-in; 
+   cursor: pointer;
 }
 
+.social-container:hover {
+    transform: translateY(-5%);
+}
 .social-icon-container {
     height: 70%;
      aspect-ratio: 1/1;

@@ -1,5 +1,5 @@
-main {
-    height: 100vh;
+.project-container {
+   min-height: 100vh;
     background-image: linear-gradient(#212020 2px, transparent 1px), linear-gradient(to right, #212020 2px, transparent 1px);
     background-size: 170px 170px;
     background-color: #000000;
@@ -7,6 +7,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 
 /* Container styling */
@@ -14,7 +15,13 @@ main {
   
   /* Wrapper */
   .project-wrapper {
-    width: ;
+    width: 80%;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Stack elements properly */
+    align-items: center;
+    gap: 2rem;
   }
   
   /* Project card */
@@ -33,11 +40,18 @@ main {
   }
 
   .right-card {
-    flex: 1; /* This allows it to take available space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     padding: 2% 0 0 0;
     gap: 2rem;
+  }
+
+  .left-card {
+    display: flex;
+  flex-direction: column; /* Stack images */
+  gap: 1rem;
+  flex: 1; 
   }
   .project-title {
     font-size: 5vw;
@@ -70,27 +84,25 @@ main {
 
 .workDescription p {
     color: white;
-    font-size: 2vw;
+    font-size: 1.2vw;
     padding-bottom: 4%;
     border-bottom: 1px solid white;
+    
 }
   /* Image */
   .project-img {
-    width: 50%;
-    height: 80%;
+    width: 100%;
     border-radius: 50px;
-    display: block;
     object-fit: cover;
-    left: 0;
   }
   
   /* Description */
 
   /* Tools Section */
   .tools-title {
-    font-size: 18px;
-    color: #444;
-    margin-top: 15px;
+    padding-top: 3%;
+    color: white;
+    font-size: 1.5vw;
   }
   
   .tools-list {
@@ -98,23 +110,45 @@ main {
     padding: 0;
   }
   
-  .tools-list li {
-    font-size: 14px;
-    color: #555;
-    padding: 5px 0;
+  .tools {
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 2%;
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 50px;
   }
   
   /* Back Button */
-  .back-btn-container {
-    margin-top: 20px;
+
+  .live-button {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1vw;
+    background-color: #fcfcfc;
+    padding: 20px 0 0 20px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 50%;
+    border-radius: 50px;
+  }
+
+  .live-button:hover {
+    background: rgba(162, 162, 162, 0.2); 
+    backdrop-filter: blur(7px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 10px rgba(142, 142, 142, 0.2); 
+    color: white;
   }
   
   .back-btn {
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1vw;
     border: 1px solid #ffffff;
-    padding: 8px 15px;
+    padding: 20px 0 0 20px;
     border-radius: 6px;
     display: inline-block;
     transition: all 0.3s ease;

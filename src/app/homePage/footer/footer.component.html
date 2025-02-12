@@ -1,55 +1,19 @@
- <!-- Remove the container if you want to extend the Footer to full width. -->
 
+<section>
 
-    <footer class=" text-center text-white" style="background-color: #1a1818;">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Form -->
-      <section class="">
-        <!-- <form action=""> -->
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Keep in Touch</strong>
-              </p>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input [(ngModel)]="userEmail" type="email" id="form5Example2" class="form-control" [ngClass] = "{hide: isSubscribed}" placeholder="Email"/>
-                <p class="hide" [ngClass] = "{show: isSubscribed}" *ngIf="isSubscribed && !emailValidation">Thank you <strong>{{userEmail}}</strong> for subscribing.</p>
-                <p *ngIf="emailValidation" class="text-danger">Please enter a valid email address.</p>
-              </div>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button (click)="subscribe()" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        <!-- </form> -->
-      </section>
-      <!-- Section: Form -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h1>
+        LETS WORK TOGETHER
+      </h1>
     </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div> -->
-    <!-- Copyright -->
+    <div class="footer-content">
+      <div class="links-container">
+        <a routerLink="/">HOME</a>
+        <a routerLink="/projects">PROJECTS</a>
+        <a routerLink="/about" >ABOUT</a>
+        <a routerLink="/contact">CONTACT</a>
+      </div>
+    </div>
   </footer>
-
-  <!-- End of .container -->
+</section>

@@ -6,7 +6,7 @@
         <div class="contact-parent">
             <!-- Social Links -->
             <div class="contact-form-container">
-                <div class="social-container">
+                <div *ngIf="linkedinUrl" class="social-container" (click)="openLink(linkedinUrl)"class="social-container">
                     <div class="social-icon-container">
                         <img src="/images/socials/email.svg" alt="Email">
                     </div>
@@ -15,7 +15,7 @@
                         <p>johngabrieltperez&#64;gmail.com</p>
                     </div>
                 </div>
-                <div class="social-container">
+                <div *ngIf="emailUrl" class="social-container" (click)="openLink(linkedinUrl)" class="social-container">
                     <div class="social-icon-container">
                         <img src="/images/socials/linkedin.svg" alt="LinkedIn">
                     </div>
@@ -24,7 +24,7 @@
                         <p><a  target="_blank">linkedin.com/in/john-gabriel-perez/</a></p>
                     </div>
                 </div>
-                <div class="social-container">
+                <div *ngIf="instaUrl" class="social-container" (click)="openLink(linkedinUrl)" class="social-container">
                     <div class="social-icon-container">
                         <img src="/images/socials/igg.svg" alt="Instagram">
                     </div>

@@ -7,7 +7,7 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div *ngFor="let project of projects" class="col">
             <div class="cards"  [routerLink]="['/projects',project.category, project.name]">
-              <img [src]="project.image" [alt]="project.name" class="card-img-top">
+              <img [src]="project.image[0]" [alt]="project.name" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">{{ project.name }}</h5>
                 <!-- <p class="card-text">{{ project.desc }}</p> -->

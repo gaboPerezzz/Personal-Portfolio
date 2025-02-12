@@ -1,11 +1,37 @@
 <main>
-    <div class="visual-art container-fluid">
-        <button class="btn btn-primary btn-lg" routerLink="/projects/visual-art">Visual Arts</button>
+    <!-- Visual Arts -->
+    <div class="visual-art container-fluid" 
+         [ngClass]="{'hovered-visual': hoveredSection === 'visual'}">
+         <h1>VISUAL ARTS</h1>
+        <button class="back-btn" 
+                routerLink="/projects/visual-art"
+                (mouseenter)="setHover('visual')" 
+                (mouseleave)="removeHover()">
+                VIEW PROJECTS
+        </button>
     </div>
-    <div class="digital-art container-fluid">
-        <button class="btn btn-primary btn-lg" routerLink="/projects/digital-art">Digital Arts</button>
+
+    <!-- Digital Arts -->
+    <div class="digital-art container-fluid" 
+         [ngClass]="{'hovered-digital': hoveredSection === 'digital'}">
+           <h1 style="font-size: 10vw;">DIGITAL ARTS</h1>
+        <button class="back-btn" 
+                routerLink="/projects/digital-art"
+                (mouseenter)="setHover('digital')" 
+                (mouseleave)="removeHover()">
+            VIEW PROJECTS
+        </button>
     </div>
-    <div class="web-design container-fluid">
-        <button class="btn btn-primary btn-lg" routerLink="/projects/web-design">Website Design</button>
+
+    <!-- Web Design -->
+    <div class="web-design container-fluid" 
+         [ngClass]="{'hovered-web': hoveredSection === 'web'}">
+         <h1 style="font-size: 7vw;">WEBSITE DESIGN</h1>
+        <button class="back-btn" 
+                routerLink="/projects/web-design"
+                (mouseenter)="setHover('web')" 
+                (mouseleave)="removeHover()">
+            VIEW PROJECTS
+        </button>
     </div>
 </main>
