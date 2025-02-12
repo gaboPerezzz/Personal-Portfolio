@@ -1,0 +1,136 @@
+main {
+    height: 100vh;
+    background-image: linear-gradient(#212020 2px, transparent 1px), linear-gradient(to right, #212020 2px, transparent 1px);
+    background-size: 170px 170px;
+    background-color: #000000;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+
+  
+  /* Wrapper */
+  .project-wrapper {
+    width: ;
+  }
+  
+  /* Project card */
+  .project-card {
+    height: 70vh;
+    border-radius: 12px;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  /* Title */
+  .title-work {
+    width: 100%;
+  }
+
+  .right-card {
+    flex: 1; /* This allows it to take available space */
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0 0 0;
+    gap: 2rem;
+  }
+  .project-title {
+    font-size: 5vw;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border: solid white 1px;
+    border-right: none;
+    border-radius: 50px;
+    padding: 1%;
+    background: rgba(162, 162, 162, 0.2); 
+    backdrop-filter: blur(7px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(162, 162, 162, 0.2); 
+    box-shadow: 0 4px 10px rgba(142, 142, 142, 0.2); 
+  }
+
+.workDescription {
+    border-radius: 50px;
+    background: rgba(162, 162, 162, 0.2); 
+    backdrop-filter: blur(7px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(162, 162, 162, 0.2); 
+    box-shadow: 0 4px 10px rgba(142, 142, 142, 0.2); 
+    padding: 5%;
+    height: 60vh;
+}
+
+.workDescription p {
+    color: white;
+    font-size: 2vw;
+    padding-bottom: 4%;
+    border-bottom: 1px solid white;
+}
+  /* Image */
+  .project-img {
+    width: 50%;
+    height: 80%;
+    border-radius: 50px;
+    display: block;
+    object-fit: cover;
+    left: 0;
+  }
+  
+  /* Description */
+
+  /* Tools Section */
+  .tools-title {
+    font-size: 18px;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  .tools-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tools-list li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+  }
+  
+  /* Back Button */
+  .back-btn-container {
+    margin-top: 20px;
+  }
+  
+  .back-btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 50px;
+  }
+  
+  .back-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Error messages */
+  .error-message {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+  }
+  

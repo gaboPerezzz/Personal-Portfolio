@@ -1,0 +1,26 @@
+<main class="py-5">
+  <div class="container-fluid">
+    <h1 class="mb-5">{{ category | titlecase }}<br> Projects</h1>
+    
+    <div *ngIf="projects.length > 0; else noProjects">
+      <div class="grid-container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div *ngFor="let project of projects" class="col">
+            <div class="cards"  [routerLink]="['/projects',project.category, project.name]">
+              <img [src]="project.image" [alt]="project.name" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <!-- <p class="card-text">{{ project.desc }}</p> -->
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #noProjects>
+      <p class="text-center text-muted">No projects found for this category.</p>
+    </ng-template>
+  </div>
+</main>

@@ -1,0 +1,40 @@
+<main class="project-container">
+  <div class="project-wrapper">
+    <ng-container *ngIf="project; else noProject">
+      <div class="project-card">
+        
+
+        <ng-container *ngIf="project.image; else noImage">
+          <img [src]="project.image" [alt]="project.name" class="project-img">
+        </ng-container>
+
+        <div class="right-card">
+          <div class="title-work">
+             <h1 class="project-title">{{ project.name }}</h1>
+         </div>
+
+         <div class="workDescription">
+        <p class="project-desc">{{ project.desc || 'No description available.' }}</p>
+
+        <ng-container *ngIf="project.tools.length">
+          <h3 class="tools-title">Tools Used:</h3>
+          <ul class="tools-list">
+            <li *ngFor="let tool of project.tools">{{ tool }}</li>
+          </ul>
+        </ng-container>
+      </div>
+    </div>
+      </div>
+    </ng-container>
+    <div class="back-btn-container">
+      <a routerLink="/projects" class="back-btn">← Back to Projects</a>
+    </div>
+    <ng-template #noProject>
+      <div class="error-message">Project not found.</div>
+    </ng-template>
+
+    <ng-template #noImage>
+      <div class="error-message">No image available.</div>
+    </ng-template>
+  </div>
+</main>

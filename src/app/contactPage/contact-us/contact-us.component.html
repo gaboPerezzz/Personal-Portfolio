@@ -1,0 +1,62 @@
+<main>
+    <header>
+        <h1>GET IN TOUCH</h1>
+    </header>
+    <section>  
+        <div class="contact-parent">
+            <!-- Social Links -->
+            <div class="contact-form-container">
+                <div class="social-container">
+                    <div class="social-icon-container">
+                        <img src="/images/socials/email.svg" alt="Email">
+                    </div>
+                    <div class="social-desc">
+                        <h2>EMAIL</h2>
+                        <p>johngabrieltperez&#64;gmail.com</p>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <div class="social-icon-container">
+                        <img src="/images/socials/linkedin.svg" alt="LinkedIn">
+                    </div>
+                    <div class="social-desc">
+                        <h2>LINKEDIN</h2>
+                        <p><a  target="_blank">linkedin.com/in/john-gabriel-perez/</a></p>
+                    </div>
+                </div>
+                <div class="social-container">
+                    <div class="social-icon-container">
+                        <img src="/images/socials/igg.svg" alt="Instagram">
+                    </div>
+                    <div class="social-desc">
+                        <h2>INSTAGRAM</h2>
+                        <p><a  target="_blank">Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form (ngSubmit)="send()">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" [(ngModel)]="form.name" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" [(ngModel)]="form.email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" [(ngModel)]="form.message" class="form-control messages" id="message" rows="4" placeholder="Your message" required></textarea>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="btn"><p>Submit</p></button>
+                    </div>  
+                </form>
+            </div>
+        </div> 
+    </section>
+</main>

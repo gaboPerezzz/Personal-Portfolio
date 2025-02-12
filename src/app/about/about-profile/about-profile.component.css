@@ -1,0 +1,68 @@
+.container {
+    width: 60%;
+    height: 100%;
+}
+
+.hello {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: clamp(1.4rem, 1.4vw, 3rem);
+}
+
+p {
+    color: white;
+    width: 80%;
+    margin-top: 5%;
+    line-height: 2rem;
+    font-size: clamp(0.8rem, 0.9vw, 2rem) ;
+}
+
+@media screen and (max-width: 768px) { 
+    .container-fluid {
+        padding-top: 15%;
+    }
+
+    .hello {
+        padding: 1%;
+        flex-direction: column;
+        justify-content: center;
+        margin-inline: auto;
+        align-items: center;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    h2 {
+        margin-left: 5%;
+    }
+
+    p {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+}

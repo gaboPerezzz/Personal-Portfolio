@@ -1,0 +1,146 @@
+<main>
+  <div class="about-me-parent">
+    <div class="about-me-content">
+        <img src="/images/choo.jpg" alt="">
+    </div>
+    <div class="about-me-content">
+        <div class="about-me-desc">
+            <h1>ABOUT ME</h1>
+            
+        </div>
+        <div class="about-me-desc">
+            <p>I see myself as an artist, designer, and developer, using each role to express my creativity in unique ways. Through art, I bring emotions and experiences to life, while design allows me to create purposeful and visually engaging solutions. As a developer, I merge creativity with technology to turn ideas into interactive and functional realities. This combination of skills lets me explore the balance between imagination and logic, telling stories through visuals, design, and code. To me, art, design, and development are interconnected parts of my creative process, bridging the gap between vision and reality.</p>
+        </div>
+    </div>
+  </div>
+
+    <section>
+        <div class="skills-parent">
+            <div class="skills-content">
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h1>Technical Skills</h1>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body skill-container">
+                            <div class="icon-container">
+                                <img src="/images/skills/figma.svg" alt="">
+                               
+                            </div>
+                            <div class="icon-container">
+                                <img src="/images/skills/vscode.png" alt="">
+                              
+                            </div>
+                            <div class="icon-container">
+                                <img src="/images/skills/meta.png" alt="">
+                            
+                            </div>
+                            <div class="icon-container">
+                                <img src="/images/skills/adobeAI.svg" alt="">
+                              
+                            </div>
+                            <div class="icon-container">
+                                <img src="/images/skills/adobeLR.svg" alt="">
+                            </div>
+                            <div class="icon-container">
+                                <img src="/images/skills/adobePS.svg" alt="">
+                             
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <h1>Soft Skills</h1>
+                        </button>
+                      </h2>
+                   
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body skill-container">
+                            <div class="skills-shape">
+                                <p class="px-3">Leadership</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Teamwork</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Communication</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Management</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Flexibility</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Passionate</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         <h1>Area of Expertise</h1>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body skill-container">
+                            <div class="skills-shape">
+                                <p class="px-3">Graphic Design</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Digital Arts</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Visual Arts</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">UI/UX Design</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Front End Development</p>
+                            </div>
+                            <div class="skills-shape">
+                                <p class="px-3">Web Design</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-picture-container">
+                    <img src="images/me2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="certs-parent mt-5">
+            <div class="cert-content">
+                <h1>CERTIFICATIONS</h1>
+            </div>
+            <div class="cert-content">
+                <div *ngFor="let cert of certs" class="cert-card-container">
+                    <div class="cert-card-img">
+                        <img [src]="cert.certImg" [alt]="cert.certName">
+                    </div>
+                    <div class="cert-card-desc">
+                        <h1>{{ cert.certName | uppercase }}</h1>     
+                        <p class="mt-4">{{ cert.certProvider }} <br> {{ cert.certDate }}</p>    
+                        <div class="btn-container">
+                            <a  [href]="cert.certFile" download class="btn"><p>← Download</p></a>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</main>

@@ -1,0 +1,32 @@
+
+.row {
+    padding: 8%;
+
+}
+
+h1 {
+    color: white;
+    margin: 2%;
+    font-size: clamp(3rem, 4vw, 5rem);
+}
+p {
+    text-wrap: wrap;
+    color: white;
+  
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) { 
+    .container-fluid {
+        padding-top: 15%;
+    }
+}

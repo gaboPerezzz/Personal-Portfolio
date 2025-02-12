@@ -26,10 +26,13 @@
                 "input": "public"
               }
             ],
-            "styles": [
+           "styles": [
+             "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ],
-            "scripts": []
+              ],
+            "scripts": [
+                  "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f74e7ba0-797f-4407-88cc-4044ad6a663d"
   }
 }
